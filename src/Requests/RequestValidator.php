@@ -27,7 +27,7 @@ class RequestValidator extends FormRequest
      */
     public function rules()
     {
-        $config = resolve(ConfigRepository::class);
+        $config = app(ConfigRepository::class);
 
         return [
             'disk' => [
