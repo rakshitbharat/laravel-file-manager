@@ -2,7 +2,7 @@
 
 use Alexusmai\LaravelFileManager\Services\ConfigService\ConfigRepository;
 
-$config = resolve(ConfigRepository::class);
+$config = app(ConfigRepository::class);
 
 // App middleware list
 $middleware = $config->getMiddleware();
